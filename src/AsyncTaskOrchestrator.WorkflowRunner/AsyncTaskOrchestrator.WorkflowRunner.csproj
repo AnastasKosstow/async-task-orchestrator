@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-AsyncTaskOrchestrator.WorkflowRunner-19f83c32-6fb6-43a2-a41c-f3a570175baf</UserSecretsId>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AsyncTaskOrchestrator.RabbitMq\AsyncTaskOrchestrator.RabbitMq.csproj" />
+    <ProjectReference Include="..\AsyncTaskOrchestrator.Services\AsyncTaskOrchestrator.Services.csproj" />
+  </ItemGroup>
+</Project>
